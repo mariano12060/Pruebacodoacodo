@@ -1,0 +1,33 @@
+
+a {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* :link se refiere a un enlace que todavía no ha sido visitado */
+a:link {
+    border: 2px red solid;
+    background-color: blanchedalmond;
+    color: rgb(25, 0, 255);
+}
+
+/* :visited se refiere a un enlace que ya ha sido visitado */
+a:visited {
+    border: 2px blue solid;
+    background-color: pink;
+    color:blue ;
+ }
+
+/* :hover se refiere a un elemento sobre el que se coloca el puntero del mouse */
+a:hover {
+    border: 2px rgb(2, 43, 34) solid;
+    background-color: rgb(116, 208, 211);
+    color: rgba(1, 20, 19, 0.925);
+}
+
+/* :active se refiere a cualquier elemento que ha sido activado por el usuario */
+ a:active {
+    border: 2px green solid;
+    background-color: lightgreen;
+    color:green ;
+ }

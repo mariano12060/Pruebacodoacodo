@@ -1,0 +1,34 @@
+
+/* pseudoclase :first-child*/
+.listaejemplo li:first-child {
+    color: blue;
+}
+
+
+/* pseudoclase :last-child*/
+.listaejemplo li:last-child {
+    color:brown;
+}
+
+
+/* pseudoclase :nth-child(n)*/
+.listaejemplo li:nth-child(4) {
+    color: red;
+    background-color: aquamarine;
+    margin-right: 1250px;
+}
+
+
+/* pseudoclase :nth-child(n) cada 3*/
+.listaejemplo li:nth-child(3n){
+    color: darkgreen;
+}
+
+/* pseudoclase :nth-child(3n+1) para que los numeros sean pares*/
+/* pseudoclase :nth-child(n) cada 3 desde el 16
+          li:nth-child(odd) IMPARES
+          li:nth-child(even) PARES*/
+.listaejemplo li:nth-child(3n+16){
+    color: blueviolet;
+}
+

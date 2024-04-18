@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 5.1</title>
+
+    <!-- LO QUE HICE FUE VINCULAR ESTE HTML CON LA HOJA DE ESTILO CSS (#ARCHIVO.CSS)-->
+    <link rel="stylesheet" href="./archivo.CSS">
+</head>
+
+<body>
+
+    <h1>Primeros pasos en CSS</h1>
+
+    <h2>Probando margenes y colores</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, nam qui. Nam minima dolorum amet maxime, est
+        eveniet vero dolore fugit assumenda labore, ex quos incidunt aut similique tempore error.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, nam qui. Nam minima dolorum amet maxime, est
+        eveniet vero dolore fugit assumenda labore, ex quos incidunt aut similique tempore error.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, nam qui. Nam minima dolorum amet maxime, est
+        eveniet vero dolore fugit assumenda labore, ex quos incidunt aut similique tempore error.</p>
+
+    <!-- ESTA ES UNA ETIQUETA DE TIPO "CLASS" -->
+    <!-- Dentro del documento HTML se lo referencia dentro de la etiqueta usando el atributo class 
+                        LA CLASE PUEDE SER PARA UNA SOLA ETIQUETA O MAS-->
+    <p class="tamano">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, nam qui. Nam minima dolorum amet
+        maxime, est
+        eveniet vero dolore fugit assumenda labore, ex quos incidunt aut similique tempore error.</p>
+    <p class="tamano azul">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, nam qui. Nam minima dolorum
+        amet maxime, est
+        eveniet vero dolore fugit assumenda labore, ex quos incidunt aut similique tempore error.</p>
+    <p class="tamano">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, nam qui. Nam minima dolorum amet
+        maxime, est
+        eveniet vero dolore fugit assumenda labore, ex quos incidunt aut similique tempore error.</p>
+
+    <!-- ESTA ES UNA ETIQUETA DE TIPO "ID" -->
+    <!-- Dentro del documento HTML se lo referencia dentro de la etiqueta usando el atributo id.
+                     IMPORTANTE!!! SIEMPRE VA A SER PARA UNA SOLA ETIQUETA-->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, nam qui. Nam minima dolorum amet maxime, est
+        eveniet vero dolore fugit assumenda labore, ex quos incidunt aut similique tempore error.</p>
+    <p id="importante">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, nam qui. Nam minima dolorum amet
+        maxime, est
+        eveniet vero dolore fugit assumenda labore, ex quos incidunt aut similique tempore error.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, nam qui. Nam minima dolorum amet maxime, est
+        eveniet vero dolore fugit assumenda labore, ex quos incidunt aut similique tempore error.</p>
+
+    <!-- ESTA ES UNA ETIQUETA DE TIPO "SPAN" CON MUCO USO EN LA ACTUALIDAD -->
+    <!-- SE PUEDE USAR TANTO CON "CLASS" COMO CON "ID" -->
+    <p>Lorem ipsum dolor sit amet <span id="nombre">consectetur</span> adipisicing elit. Illo cupiditate recusandae
+        officiis ipsam enim cum et
+        dolorum saepe. Voluptatum tempore quae odio <span class="resaltado">blanditiis!</span> Odit numquam, temporibus
+        ab maxime ducimus rerum.</p>
+
+    <!-- ESPECIFICIDAD -->
+    <!-- La especificidad es el mecanismo mediante el cual los navegadores deciden qué 
+        valores de una propiedad CSS son más relevantes para un elemento. -->
+    <h1>Niveles de especificidad</h1>
+    <h1 class="clase">Niveles de especificidad</h1>
+    <h1 class="clase" id="iden">Niveles de especificidad</h1>
+    <h1 class="clase" id="iden" style="color: darkmagenta; background-color: steelblue;">Niveles de especificidad</h1>
+</body>
+</html>
