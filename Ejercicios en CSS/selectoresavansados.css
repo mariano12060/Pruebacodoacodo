@@ -1,0 +1,52 @@
+
+/* selector AGRUPADO. Se utiliza la (COMA ,)
+Se utiliza cuando varios elementos comparten una serie 
+de declaraciones iguales, se aplican las reglas CSS a los 
+selectores involucrados */
+h2, h3, p {
+    color: brown;
+}
+ p{
+    background-color: aquamarine;
+ }
+
+
+/* selector DESCENDIENTE. Se utiliza el ESPACIO
+Apunta a elementos contenidos dentro de otro en la 
+estructura del documento*/
+/* todos los p que esten dentro de un div... */
+ div p {
+    color: darkgreen;
+    background-color: white;
+ }
+
+
+/* selector HIJO DIRECTO. Se utiliza el signo > (mayor)
+Selecciona los elementos que sean hijos directos del 
+contenedor padre */
+/* todos los p que sean hijos directos del div...*/
+ .hijodirecto > p {
+    color: cadetblue;
+    background-color: burlywood;
+ }
+
+
+ /* selector HERMANO ADYACENTE. Se utiliza el signo + (más)
+Aplica estilos a elementos que siguen 
+inmediatamente a otros. Deben tener el mismo 
+elemento padre ser inmediatamente siguiente a él. */
+ h2 + p {
+    color:seagreen;
+    background-color: blanchedalmond;
+    text-align: center;
+    margin-left: 15px;
+ }
+
+
+/* selector GENERAL DE HERMANOS. Se utiliza el signo ~ (virgulilla)
+Selecciona todos los elementos que son hermanos del 
+especificado, sin necesidad de que sean adyacentes.*/
+ h4 ~ p {
+    color: darkorchid;
+    background-color: coral;
+ }

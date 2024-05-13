@@ -1,0 +1,53 @@
+* { font-family: Verdana;}
+
+.ejemplo{
+    padding: 20px;
+    color: white;
+}
+
+@media only screen and ( max-width: 600px) {
+    .ejemplo{
+        background-color: red;
+    }
+    .tamano::before{
+        content: "La pantalla mide hasta 600px";
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .ejemplo{
+        background-color: green;
+    }
+    .tamano::before{
+        content: "La pantalla mide mas de 600px";
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .ejemplo{
+        background-color:blue ;
+    }
+    .tamano::before{
+        content: "La pantalla mide mas de 768px";
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .ejemplo{
+        background-color:orangered ;
+        color: black;
+    }
+    .tamano::before{
+        content: "La pantalla mide mas de 992px";
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .ejemplo{
+        background-color:pink ;
+        color: black;
+    }
+    .tamano::before{
+        content: "La pantalla mide mas de 1200px";
+    }
+}

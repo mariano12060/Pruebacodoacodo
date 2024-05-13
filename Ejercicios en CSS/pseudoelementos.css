@@ -1,0 +1,29 @@
+
+/* Los pseudoelementos se utilizan para darle estilos a partes específicas de un elemento. Están 
+precedidos por cuatro puntos (::) */
+
+/* ::first-letter se utiliza para darle estilo a la primera letra de un texto */
+p::first-letter {
+    color: darkred;
+    background-color:cadetblue;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ::first-line se utiliza para darle estilo a la primera línea de un párrafo */
+.firstline::first-line {
+    color:blue;
+    background-color: aquamarine;
+}
+
+/* ::selection agrega estilos a una parte del documento que ha sido resaltada por el 
+usuario: */
+p::selection {
+    background-color:darkgrey;
+    color:darkred;
+}
+
+/* ::before y ::after agregan contenido antes y después, respectivamente, del 
+contenido */
+div > p::before {content: "INICIO DE PARRAFO.";}
+p::after {content:"  FINAL DE PARRAFO.";}

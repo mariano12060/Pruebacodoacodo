@@ -1,0 +1,38 @@
+div{
+    text-align: center;
+    margin: auto;
+    background-color: #4c5e5e;
+}
+
+
+h1{
+    color:#072227;
+    background-color:#4FBDBA;
+    text-align:center;
+    width: 20%;
+}
+.one{
+    background-color: rgba(233, 229, 222, 0.712);
+    padding: 5px;
+    margin: 7px 0;
+    box-sizing: border-box;
+    border: 2px solid #072227;
+    border-radius: 10px;
+}
+
+/*.one{
+    background-color: rgba(233, 229, 222, 0.712);
+    padding: 7px;
+    box-sizing: border-box;
+    border: 2px solid #03010191;
+    border-radius: 10px;
+} */
+
+body{
+    background-color:#AEFEFF;
+}
+
+/* PARA PONER IMAGENES DE FONDO EN TODA LA PAGINA SE UTILIZA:
+body{
+    background-image: url();
+}*/

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="./P.F.css">
+    <link rel="icon" href="./argentina.png">
+</head>
+<body>
+    <header>
+      <nav>
+    <h1>FORMULARIOS</h1>
+    
+    <form action="link o URL" method="post" target="_blank">
+    <div>    
+        <label for="nom"> Nombre: </label>
+        <input class="one" type="text" id="nom" name="nombre" value="" size="20" maxlength="15" minlength="4" placeholder="Complete el campo" required>
+        
+        <label for="ape"> Apellido: </label>
+        <input class="one" type="text" id="ape" name="apellido" size="20" maxlength="15" minlength="4" required>
+        
+        <label for="tel"> Telefono: </label>
+        <input class="one" type="number" name="telefono" id="tel" size="15" maxlength="15" minlength="4" required>
+       
+        <label for="dni"> Numero de DNI: </label>
+        <input class="one" type="number" name="dni" id="dni" size="15" maxlength="15" minlength="4" max="99999999" min="0" required>
+    
+    </div> 
+        <br>
+        <label for="edad"> Edad: </label>
+        <input class="one" type="number" name="edad" id="edad" size="10" maxlength="3" minlength="1" max="72" min="18" required placeholder="">
+        
+        <label for="nacim"> Fecha de nacimiento: </label>
+        <input class="one" type="date" name="" id="nacim">
+        <br><br>
+        <label for="pass">contraseña</label>
+        <input type="password" name="" id="pass">
+        <br><br>
+        <label for="email">E-mail</label>
+        <input type="email" name="" id="email">
+        <br><br>
+        <label for="url">URL</label>
+        <input type="url" name="" id="url">
+        <br><br>
+        <label for="file">subir archivo</label>
+        <input type="file" name="" id="file">
+        <br><br>
+        <h3>checkboxes</h3>
+        <label for="conoc">CONOCIMIENTOS PREVIOS</label>
+        <input type="checkbox" name="conoc" id="conoc" checked>CSS
+        <input type="checkbox" name="conoc" id="conoc">HTML
+        <input type="checkbox" name="conoc" id="conoc">JS
+        <input type="checkbox" name="conoc" id="conoc">PYTHON
+        <br><br>
+        <h3>radiobotton</h3>
+        <label for="turn">TURNO</label>
+        <input type="radio" name="turno" id="turn">mañana
+        <input type="radio" name="turno" id="turn">tarde
+        <input type="radio" name="turno" id="turn">noche
+        <br><br>
+        <h3>formulario select y option</h3>
+        <label for="turn">TURNO</label>
+        <select name="" id="turn" size="0">
+            <option value="">mañana</option>
+            <option value="">tarde</option>
+            <option value="">vespertino</option>
+            <option value="">noche</option>
+        </select>
+        <br><br>
+        <h3>formulario textarea</h3>
+        consulta: <textarea name="comentarios" id="coment" cols="30" rows="10" placeholder="escribi aca..."></textarea>
+        <br><br>
+        <input type="submit" value="ENVIAR DATOS">
+        <input type="reset" value="BORRAR TODO"><br>
+        elija un color: <input type="color" name="" id="">
+    </nav>
+</header>
+</body>
+</html>

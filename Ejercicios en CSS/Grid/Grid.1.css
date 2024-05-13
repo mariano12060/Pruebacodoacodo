@@ -1,0 +1,52 @@
+.container {
+    background-color: lightblue;
+    padding: 20px;
+    display: grid;
+
+/* con "grid-template-columns" defino como van a ser las columnas.
+se pueden definir en px, %, y fr, (repeat(n, nfr)) */
+    grid-template-columns: 150px 200px 150px;
+
+/* "gap" es la propiedad abreviada y es el espacio entre filas y entre columnas*/
+    gap: 20px;
+
+/* con "column-gap" especifico la separcion entre c/columna */
+    /* column-gap: 50px; */
+
+/* con "row-gap" especifico la separcion entre c/fila */
+/* PUEDO USAR SOLO "gap:npx" */
+    /* row-gap: 20px; */
+
+/* con "grid-template-rows" defino como van a ser las filas.
+se pueden definir en px, %, y fr, (repeat(n, nfr)) */    
+    grid-template-rows: 150px 100px 200px;
+
+/* "height" defino la altura de c/fila*/
+    /* height: 500px; */
+
+/*" grid-auto-rows" establece un tamaño para las filas de un contenedor de cuadrícula.
+esta propiedad solo afecta a las filas cuyo tamaño no está establecido*/
+    /* grid-auto-rows: 5fr; */
+
+/* La propiedad "justify-content" se utiliza para alinear toda la cuadrícula dentro 
+del contenedor: "center", "space-evenly", "space-around", "space-between", "start", "end".
+El ancho total de la cuadrícula debe ser menor que el ancho del contenedor.*/
+    justify-content: center;
+
+/* La propiedad "align-content" se usa para alinear verticalmente toda la 
+cuadrícula dentro del contenedor.*/
+    align-content: center;
+
+/* La propiedad "align-item" se usa para alinear verticalmente el item de la cuadrícula dentro del contenedor.
+"stretch" es por defecto, "center", "end", "start...etc */
+    align-items:stretch;
+
+/* La propiedad "justify-item" se usa para alinear horizontalmente el item de la cuadrícula dentro del contenedor.*/
+    justify-items: stretch;
+}
+
+.item {
+    background-color: lightgreen;
+    padding: 20px;
+    border: 1px dotted black;
+}

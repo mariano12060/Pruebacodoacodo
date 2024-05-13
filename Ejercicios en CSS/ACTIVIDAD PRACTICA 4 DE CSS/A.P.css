@@ -1,0 +1,31 @@
+.nav{
+    background-color:silver;
+    color: black;
+    padding: 3px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.im{
+    border-radius: 15px;
+}
+
+h1{
+    text-align: center;
+    color:white;
+    background-color:black;
+    font-size: 40px;
+}
+
+header{
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    left: 0;
+}
+
+.pie{
+    text-align: center;
+    color:white;
+    background-color:black;
+}

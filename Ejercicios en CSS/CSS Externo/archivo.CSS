@@ -1,0 +1,79 @@
+/* <!-- LO QUE HICE FUE VINCULAR ESTA HOJA DE ESTILO CSS (#ARCHIVO.CSS) CON EL HTML (CSS EXTERNO) --> */
+
+/* Son tambien un selector de etiqueta o tipo: Este selector afecta a una etiqueta específica,
+Por ejemplo, a todas las etiquetas <h1> o <p> del documento */
+p{
+    color: darkblue;
+    background-color:chocolate;
+}
+h1{ color: forestgreen;
+    background-color:aquamarine;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+}
+h2{
+    color: chocolate;
+    background-color: bisque;
+    margin-left: 100px;
+    padding: 20px;  
+}
+
+/*  EL "*" ES UNA ETIQUETA UNIVERSAL, LO QUE PONGA ACA ME CAMBIA TODA LA PAGINA 
+           EL ASTERISCO SIRVE ADEMAS PARA RESETEAR ESTILOS*/
+* { background-color:darkolivegreen;
+}
+
+/* ESTA ES UNA ETIQUETA DE TIPO "CLASS" Y SE USA PONIENDO UN PUNTO AL PRINCIPIO, 
+           SEGUIDO DEL NOMBRE QUE SE LE ASIGNE AL SELECTOR */
+.tamano{
+    color:hotpink;
+    background-color:black;
+    font-size: 20px;
+}
+.azul{
+    color: blue;
+}
+
+/* ESTA ES UNA ETIQUETA DE TIPO "ID" Y SE USA PONIENDO UN ASTERISCO AL PRINCIPIO, 
+           SEGUIDO DEL NOMBRE QUE SE LE ASIGNE AL SELECTOR */
+#importante{
+    color: darkmagenta;
+    background-color: burlywood;
+    font-size: 30px;
+}
+
+/* ESTA ES UNA ETIQUETA SPAN (ELEMENTO EN LINEA). Sirve para aplicar estilo al 
+texto o agrupar elementos uno a continuación del otro. Sus etiquetas 
+son <span> y </span> (ambas obligatorias) */
+#nombre{
+    color: darkgoldenrod;
+    background-color: darkred;
+    font-weight: bold;
+}
+.resaltado{
+    color: darkred;
+    background-color: darkgoldenrod;
+    font-weight: bold;
+}
+
+/* ESPECIFICIDAD */
+/* La especificidad es el mecanismo mediante el cual los navegadores deciden qué 
+valores de una propiedad CSS son más relevantes para un elemento. */
+.clase{
+    color: tomato;
+    background-color: black;
+}
+#iden{
+    color: chartreuse;
+    background-color: wheat;
+}
+/* EL ESTILO IMPORTANT ME SOBREESCRIBE ABSOLUTAMENTE TODO,
+        NO ES RECOMENDABLE SU USO EXAJERADO
+EJ: h1{ color: forestgreen; !important
+    background-color:aquamarine;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+}        -En este caso me va afectar solo el color, pero si el "important" estuviera
+          en el atributo background-color tambien afectaria a todos los fondos de ese h1*/

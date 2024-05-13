@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 5.0</title>
+    <!-- ESTO ES UN ESTILO "INTERNO" QUE SE LE INCLUYE EL "style" AL "head" AFECTANDO TODOS LOS "p".
+                NO SERIA TAN RECOMENDABLE SI QUIERO USAR OTROS ESTILOS AL CAMBIAR A OTRA PAGINA-->
+
+    <!-- Es tambien un selector de etiqueta o tipo: Este selector afecta a una etiqueta específica,
+          Por ejemplo, a todas las etiquetas <h1> o <p> del documento.-->
+    <style>
+        p{
+            color: red;
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeros pasos en CSS</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, nam qui. Nam minima dolorum amet maxime, est
+        eveniet vero dolore fugit assumenda labore, ex quos incidunt aut similique tempore error.</p>
+
+    <!-- ESTA "p" NO VA A RESPONDER AL "style" DEL head POR ORDEN DE PRECEDENCIA-->
+        <p style="color: darkblue;background-color: cornsilk;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, nam qui. Nam minima dolorum amet maxime, est
+        eveniet vero dolore fugit assumenda labore, ex quos incidunt aut similique tempore error.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, nam qui. Nam minima dolorum amet maxime, est
+         eveniet vero dolore fugit assumenda labore, ex quos incidunt aut similique tempore error.</p>
+</body>
+</html>
