@@ -127,3 +127,58 @@ function cuadrado(x){
 var aCuadrado = x => x*x
 document.write("Hola soy una funcion FLECHA y mi valor es ", aCuadrado(6));
    
+document.write("<br>")
+
+var aSumar = (num1,num2) => 4+6; /*Mantenemos los parámetros entre paréntesis y colocamos 
+a la derecha lo que devolverá la función.*/
+document.write("Hola soy otra funcion FLECHA y mi valor es ", aSumar(4,6));
+
+
+
+/*                                 Scope (alcance):
+    El scope (alcance) determina la accesibilidad (visibilidad) de las variables.
+      - En JavaScript hay dos tipos de alcance:
+   ● Alcance local (por ejemplo, una función).
+   ● Alcance global (entorno completo de JavaScript).
+          - Las variables definidas dentro de una función no son accesibles (visibles) 
+            desde fuera. La función “crea un ámbito cerrado” que impide el acceso a una 
+            variable de su interior desde fuera de ella o desde otras funciones.*/
+
+
+            /*VARIABLES LOCALES: Podremos acceder al contenido de la 
+                 variable carName solamente dentro de la función.*/
+
+// aca no puedo usar la variable carName
+function myFunction() {
+    var carName = "Volvo"
+    // aca si puedo usar la variable carName
+   }
+   // aca no puedo usar la variable carName
+
+
+        /*VARIABLES GLOBALES: En este caso podremos acceder al contenido la variable 
+               carName tanto desde fuera como desde adentro de la función.*/
+
+   var carName2 = "Fiat"
+ // aqui si puedo usar carName2
+function myFunction() {
+ // aqui tambien puedo usar la variable carName2
+}
+
+document.write("<br>")
+
+/*                              let y var:
+   "let" declara una variable de alcance local, limitando su alcance (scope) al 
+    bloque, declaración, o expresión donde se está usando. "var" define una 
+      variable global o local en una función sin importar el ámbito del bloque.*/
+
+      /*var a = 5
+      var b = 10
+    if (a === 5) {
+    let a = 4 // El alcance es dentro del bloque if
+    var b = 15 // El alcance es global, sobreescribe a 10
+    document.write(a) // 4, por alcance a nivel de bloque
+    document.write(b) // 15, por alcance global
+}
+document.write(a) // 5, por alcance global
+document.write(b) // 15, por alcance global*/
