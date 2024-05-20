@@ -27,7 +27,7 @@ function saludar(){
 // 2DO SE EJECUTA LA FUNCION   <----
 saludar();
 
-/*function tabla_del_cinco(){
+function tabla_del_cinco(){
 for (i = 1; i <= 10; i++) {document.write("<br> 5 x ", i, " = ", 5 * i)}
 };
 document.write("<br> - Hago una funcion con el codigo");
@@ -35,7 +35,7 @@ tabla_del_cinco();
 document.write("<br> - Hago otra nueva funcion con el codigo");
 tabla_del_cinco();
 document.write("<br> - Esta es otra funcion con el codigo");
-tabla_del_cinco();*/
+tabla_del_cinco();
 
 
 
@@ -43,28 +43,30 @@ tabla_del_cinco();*/
 
 /*Los PARAMETROS son las variables que ponemos cuando se define una 
 función. En la siguiente función tenemos dos parámetros “A” y “B”:*/
-/*function sumar(parametroA,parametroB){
+
+function sumar(parametroA,parametroB){
 document.write("<br><br> Hola soy la funcion SUMAR y mi valor es la ", 
     "suma de los parametroA y parametroB: ",parametroA + parametroB);
-}*/
+};
+
 /*Los ARGUMENTOS son los valores que se pasan a la función cuando ésta es 
 invocada, {“8" reemplaza a "A"} y {“5” reemplaza a "B}:*/
 /*sumar(8,5);*/
 
 // DOCUMENTACION: la funcion SUMAR lo que hace es sumar los dos terminos que se le envian. importante¡¡ enviar datos del tipo numeros.
 document.write("<br>")
-/*function saludarDos(miNombre){
+function saludarDos(miNombre){
     document.write("Hola, como estas ", miNombre, "?");
 }
 
-saludarDos("Mariano")*/
+saludarDos("Mariano")
 
-/*function tablaMultiplicar(tabla, hasta){ //tabla del 2 hasta el 11
+function tablaMultiplicar(tabla, hasta){ //tabla del 2 hasta el 11
     for (var i = 1; i <= hasta; i++)
     console.log(" 2 x ", i, " = ", tabla * i);
 }
 
-tablaMultiplicar(2,10);*/
+tablaMultiplicar(2,10);
 
 
 /*                        Parámetros múltiples:
@@ -172,7 +174,7 @@ document.write("<br>")
     bloque, declaración, o expresión donde se está usando. "var" define una 
       variable global o local en una función sin importar el ámbito del bloque.*/
 
-      /*var a = 5
+      var a = 5
       var b = 10
     if (a === 5) {
     let a = 4 // El alcance es dentro del bloque if
@@ -181,4 +183,4 @@ document.write("<br>")
     document.write(b) // 15, por alcance global
 }
 document.write(a) // 5, por alcance global
-document.write(b) // 15, por alcance global*/
+document.write(b) // 15, por alcance global

@@ -246,3 +246,54 @@ if(typeof(Storage) !== "undefined"){//"si typeof(Storage) me da diferente a unde
         console.log("Bienvenido de nuevo Sr.", apeDelVisitante + " " + nomDelVisitante);
         document.write("<br><br>Bienvenido de nuevo Sr.", apeDelVisitante + " " + nomDelVisitante);
        }
+
+
+//-------------------------------------o----------------------------------------------
+
+
+/*                 JSON: JavaScript Object Notation: Convierte texto plano en objetos y viceversa
+
+Reglas de sintaxis JSON:
+La sintaxis JSON se deriva de la sintaxis de notación de objetos de JavaScript:
+● Los datos se guardan en pares de nombre / valor
+● Los datos están separados por comas
+● Las {} contienen objetos
+● Los corchetes se usan para indicar un array
+
+En JSON , los valores deben ser uno de los siguientes tipos de datos:
+● string
+● number
+● object (JSON object)
+● array
+● boolean
+● null
+                                                                                 */
+
+//la variable "texto", con un objeto 'string' pasado del json
+let texto = '{"empleados":[{ "nombre": "Juan","apellido":"Pérez"},{"nombre":"Ana","apellido":"López" },{ "nombre": "Pedro", "apellido": "Uriarte"}]}'
+console.log(texto);
+
+//con "parse" convierto (parseo) el objeto "string" a objeto json
+let texto2 = JSON.parse(texto);
+console.log(texto2);
+
+//declaro la variable "vivienda"
+let vivienda = {}
+    vivienda.nom = "Luis",
+    vivienda.ape = "Fernández",
+    vivienda.segNom = "null",
+    vivienda.eda = 30,
+    vivienda.hij = ["Ana", "Luisa", "Marcelo"];
+console.log(vivienda);
+
+//con "stringify" convierto el objeto en cadenas de carateres
+    let vivienda2 = JSON.stringify(vivienda);
+    console.log(vivienda2)
+
+
+
+
+let superheroes = '{"squadName" : "Super Hero Squad","homeTown" : "Metro City","formed" : 2016,"secretBase" : "Super tower","active" : true,"members" : [{"name" : "Molecule Man","age" : 29,"secretIdentity" : "Dan Jukes","powers" : ["Radiation resistance","Turning tiny","Radiation blast"]},{"name" : "Madame Uppercut","age" : 39,"secretIdentity" : "Jane Wilson","powers" : ["Million tonne punch","Damage resistance","Superhuman reflexes"]},{"name" : "Eternal Flame","age" : 1000000,"secretIdentity" : "Unknown","powers" : ["Immortality","Heat Immunity","Inferno","Teleportation","Interdimensional travel"]}]}'
+console.log(superheroes);
+ let superheroes2 = JSON.parse(superheroes);
+ console.log(superheroes2)
