@@ -183,4 +183,66 @@ arreglo2.sort();
 console.log(arreglo2); 
 //el metodo "reverse" me ordena los elementos de mayor a menor
 arreglo2.reverse();
-console.log(arreglo2); 
+console.log(arreglo2);
+
+
+//------------------------------------o-----------------------------------------
+
+/*                       Web Storage: "localStorage y SessionStorage:"      
+       - El objeto "localStorage" almacena datos sin fecha de vencimiento. Los datos 
+        no se eliminarán cuando se cierre el navegador y estarán disponibles en 
+        cualquier momento futuro. 
+       - localStorage puede realizar esta tarea mediante los métodos "setItem" y 
+        "getItem", que permiten guardar y recuperar información. Los datos se 
+        almacenan en formato de texto, como pares clave / valor. */
+
+console.log(typeof(Storage));
+
+//EL SIGUIENTE CODIGO ALMACENA DATOS MEDIANTE "localStorage":
+
+if(typeof(Storage) !== "undefined"){//"si typeof(Storage) me da diferente a undefined--->guardar" 
+    // setItem guarda datos en el dispositivo
+    localStorage.setItem("apellido", "Martinez");
+    localStorage.setItem("nombre", "Mariano");
+    localStorage.setItem("Sexo","Masculino");
+    localStorage.setItem("DNI",35230286);
+    console.log("Datos guardados.");
+   } else{// si no--->
+    console.log("Web Storage no soportado.");
+   }
+   
+//EL SIGUIENTE CODIGO RECUPERA DATOS MEDIANTE "localStorage":
+
+   if (typeof(Storage) !== "undefined"){//"si typeof(Storage) me da diferente a undefined--->rECUPERAR"
+    // getItem recupera datos del dispositivo
+    //lo guardo en una variable
+    let apeDelVisitante = localStorage.getItem("apellido");
+    let nomDelVisitante = localStorage.getItem("nombre");
+    console.log("Bienvenido de nuevo Sr.", apeDelVisitante + " " + nomDelVisitante);
+    document.write("<br><br>Bienvenido de nuevo Sr.", apeDelVisitante + " " + nomDelVisitante);
+}else{
+    console.log("Web Storage no soportado.");
+   }
+
+
+//----------------------------------------o-----------------------------------------
+
+
+/*                            SessionStorage:
+       Los datos almacenados en "sessionStorage" son eliminados cuando finaliza la sesión de 
+       navegación, habitualmente al cerrar la pestaña en la que se muestra la página.*/
+
+       if(typeof(Storage) !== "undefined"){
+        sessionStorage.setItem("apellido", "Martinez");
+        sessionStorage.setItem("nombre", "Mariano");
+        sessionStorage.setItem("Sexo","Masculino");
+        sessionStorage.setItem("DNI",35230286);
+       };
+
+
+       if (typeof(Storage) !== "undefined"){
+        let apeDelVisitante = localStorage.getItem("apellido");
+        let nomDelVisitante = localStorage.getItem("nombre");
+        console.log("Bienvenido de nuevo Sr.", apeDelVisitante + " " + nomDelVisitante);
+        document.write("<br><br>Bienvenido de nuevo Sr.", apeDelVisitante + " " + nomDelVisitante);
+       }
